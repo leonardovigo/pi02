@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Informativo sobre Fraudes Bancárias</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
+</head>
+<body>
+    
+    <div id="topo">
+        <div id="logo">
+            <a href="index.html"><img src="logo2.png" border="0"/></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ranking.html">Ranking de Fraudes</a></li>
+                <li><a href="formulario.html">Formulário</a></li>
+                <li><a href="relatorio.html">Relatório Estatístico</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+        <div id="menu-sanfona">
+            <ul>  
+                 <li><a href="#"><img src="menu.png" height="70" width="70" border="0"/></a> 
+                   <ul> 
+                     <li><a href="index.html"><div id="teste">Home</div></a></li>
+                     <li><a href="ranking.html"><div id="teste">Ranking de Fraudes</div></a></li>
+                     <li><a href="formulario.html"><div id="teste">Formulário</div></a></li>
+                     <li><a href="relatorio.html"><div id="teste">Relatório Estatístico</div></a></li>
+                     <li><a href="sobre.html"><div id="teste">Sobre</div></a></li> 
+                   </ul> 
+                 </li>
+             </ul>
+        </div> <!-- fecha menu-sanfona -->
+
+    </div><!--fecha topo -->
+
+    <div id="formulario">
+    <article>
+        <form name="meuForm" method="post" id="formulario">
+            <div class="box">
+                <h1>Formulário</h1>
+        
+                <label>
+                    <span>Nome Completo:</span>
+                    <input type="text" class="input_text" name="nome" id="name" required/>
+        
+                </label>
+                
+                <label>
+                    <span>E-mail:</span>
+                    <input type="text" class="input_text" name="email" id="email" required/>
+                </label>
+                <label>
+                    <span>Qual é a sua idade?</span>
+                    <input type="number" class="input_text" name="text" id="text2" required/>
+                </label>
+        
+                <label>
+                    <span>Você já passou por algum tipo de fraude bancária?</span> 
+                
+                    <span><br><INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op1">Fraude por PIX</span>
+                        
+                    <span><INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op2">Fraude por Mensagem ou por Whatsapp</span>
+                    
+                    <span><INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op3">Fraude em Site da Internet</span>
+                    
+                    <span><INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op4">Nenhuma ou nunca passei por fraude</span>    
+
+                    <span><INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op5">Outros</span>
+                    
+                    <span>Caso tenha selecionado “outros”, especifique:</span>
+                    <input type="text" class="input_text" name="outro" id="outro"/>    
+                    <br>
+                </label>
+                <label>
+                    <span>Você verifica as informações digitadas antes de concluir uma transação bancária? (Sim/Não)</span>
+                    <textarea class="message" name="feedback" id="feedback" required></textarea> 
+                </label>
+        
+                <label>
+                    <span>Você já passou por uma fraude ou conhece alguém que já passou por uma fraude bancária diga nos qual foi o tipo?</span>
+                    <textarea class="message" name="feedback" id="feedback" required></textarea>  
+                    <input type="submit" class="button" value="Enviar"/><br><br><br>
+                </label>
+            </div>
+        </form>
+    </article>
+    </div>
+    
+    <footer>
+        <div id="info">
+            <p><b>Sobre nós</b></p>
+            <p>Somos estudantes de <br>Engenharia da Computação da <br><a href="https://univesp.br/" target="_blank" ><img src="univesp3.png" border="0" width="150"/></a></p>
+        </div>
+
+        <div id="links">
+            <p><b>Principais Links</b></p><br><br>
+            <a href="https://antifraudes.febraban.org.br/?gclid=EAIaIQobChMIu5rLhJLp8wIVS7LICh3sGQppEAAYAyAAEgLREfD_BwE" target="_blank">Dicas Anti-golpes</a><br>
+            <a href="https://globoplay.globo.com/v/9867521/?s=0s" target="_blank">Reportagem sobre fraudes no Brasil</a><br>
+            <a href="https://www.cnnbrasil.com.br/tudo-sobre/fraudes-bancarias/">Notícias sobre fraudes bancárias</a><br>
+        </div>
+    </footer>
+
+    </div><!--fecha rodape -->
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+</body>
+</html>
