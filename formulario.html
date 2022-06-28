@@ -39,59 +39,71 @@
 
     </div><!--fecha topo -->
 
-    <div id="formulario">
-    <article>
-        <form name="meuForm" method="post" id="formulario">
-            <div class="box">
-                <h1>Formulário</h1>
-        
-                <label>
-                    <span>Nome Completo:</span>
-                    <input type="text" class="input_text" name="nome" id="name" required/>
-        
-                </label>
-                
-                <label>
-                    <span>E-mail:</span>
-                    <input type="text" class="input_text" name="email" id="email" required/>
-                </label>
-                <label>
-                    <span>Qual é a sua idade?</span>
-                    <input type="number" class="input_text" name="text" id="text2" required/>
-                </label>
-        
-                <label>
-                    <span>Você já passou por algum tipo de fraude bancária?</span> 
-                
-                    <span><br><INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op1">Fraude por PIX</span>
-                        
-                    <span><INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op2">Fraude por Mensagem ou por Whatsapp</span>
-                    
-                    <span><INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op3">Fraude em Site da Internet</span>
-                    
-                    <span><INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op4">Nenhuma ou nunca passei por fraude</span>    
-
-                    <span><INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op5">Outros</span>
-                    
-                    <span>Caso tenha selecionado “outros”, especifique:</span>
-                    <input type="text" class="input_text" name="outro" id="outro"/>    
-                    <br>
-                </label>
-                <label>
-                    <span>Você verifica as informações digitadas antes de concluir uma transação bancária? (Sim/Não)</span>
-                    <textarea class="message" name="feedback" id="feedback" required></textarea> 
-                </label>
-        
-                <label>
-                    <span>Você já passou por uma fraude ou conhece alguém que já passou por uma fraude bancária diga nos qual foi o tipo?</span>
-                    <textarea class="message" name="feedback" id="feedback" required></textarea>  
-                    <input type="submit" class="button" value="Enviar"/><br><br><br>
-                </label>
+    <div id="ranking"><h1>Formulário</h1></div>
+    <div class="container">
+    <form action="#" method="post">
+            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+            <div class="campo">
+                <input type="text" style="width: 26em" name="nome" id="name" required placeholder="Digite seu nome">
             </div>
-        </form>
-    </article>
+            <div class="campo">
+                <input type="number" style="width: 26em" name="idade" id="idade" required placeholder="Idade">
+            </div>
+        <!-- Campo de email com-->
+        <div class="campo">
+            <input type="email" style="width: 26em" name="email" id="email" required placeholder="E-mail">
+        </div>
+        <br>
+        <div class="campo">
+            <label><strong>Você passou por algum timpo de fraude bancácia?</strong></label>
+            <input type="radio" name="quest" value="Sim" checked>Sim
+            <input type="radio" name="quest" value="Nao">Não
+        </div>
+        <br>
+        <!-- Há verificação de informações:-->
+        <div class="campo">
+            <label><strong>Você verifica as informações digitadas antes de concluir uma transação bancária?</strong></label>
+            <label>(Exemplo: confere se os dados do destinatário são mesmo da pessoa)</label>
+            <input type="radio" name="info" value="Sim" checked>Sim
+            <input type="radio" name="info" value="Nao" >Não
+        </div>
+        <br>
+        <!-- Tipos de fraudes selecionáveis (radio button) e css de classe "campo" -->
+        <div class="campo">
+            <label><strong>Qual tipo de fraude?</strong></label>
+            <label>
+                <input type="radio" name="fraud" value="Pix" checked>Fraude por pix
+            </label>
+            <label>
+                <input type="radio" name="fraud" value="MSN">Fraude por Mensagem ou por WhatsApp
+            </label>
+            <label>
+                <input type="radio" name="fraud" value="none">Nenhuma ou nunca passer por fraude
+            </label>
+            <label>
+                <input type="radio" name="fraud" value="outros">Outros
+            </label>
+        </div>
+        <br>
+        <!-- Caixa de texto -->
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Caso tenha selecionado "outros" especifique: </strong></label>
+            <textarea rows="6" style="width: 26em" id="outros" name="outros"></textarea>
+        </div>
+        <br>
+        <!-- Caixa de texto -->
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Você já passou por uma fraude ou conhece alguém que já passou por uma fraude bancária? Diga-nos, qual foi o tipo?</strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+        <input type="submit" class="botao" value="Enviar"/><br><br><br>
+    </form>
     </div>
-    
+
+
+
     <footer>
         <div id="info">
             <p><b>Sobre nós</b></p>
