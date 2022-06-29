@@ -40,6 +40,11 @@
     </div><!--fecha topo -->
 
     <div id="ranking"><h1>Formulário</h1></div>
+    <section>
+        <div class="container">
+            <img src="figura.png" alt="User">
+        </div>
+    </section>
     <div class="container">
     <form action="#" method="post">
             <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
@@ -58,14 +63,6 @@
             <label><strong>Você passou por algum timpo de fraude bancácia?</strong></label>
             <input type="radio" name="quest" value="Sim" checked>Sim
             <input type="radio" name="quest" value="Nao">Não
-        </div>
-        <br>
-        <!-- Há verificação de informações:-->
-        <div class="campo">
-            <label><strong>Você verifica as informações digitadas antes de concluir uma transação bancária?</strong></label>
-            <label>(Exemplo: confere se os dados do destinatário são mesmo da pessoa)</label>
-            <input type="radio" name="info" value="Sim" checked>Sim
-            <input type="radio" name="info" value="Nao" >Não
         </div>
         <br>
         <!-- Tipos de fraudes selecionáveis (radio button) e css de classe "campo" -->
@@ -89,15 +86,17 @@
         <div class="campo">
             <br>
             <label for="experiencia"><strong>Caso tenha selecionado "outros" especifique: </strong></label>
-            <textarea rows="6" style="width: 26em" id="outros" name="outros"></textarea>
+            <textarea rows="6" style="width: 29em" id="outros" name="outros"></textarea>
         </div>
         <br>
-        <!-- Caixa de texto -->
+        <!-- Há verificação de informações:-->
         <div class="campo">
-            <br>
-            <label for="experiencia"><strong>Você já passou por uma fraude ou conhece alguém que já passou por uma fraude bancária? Diga-nos, qual foi o tipo?</strong></label>
-            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            <label><strong>Você verifica as informações digitadas antes de concluir uma transação bancária?</strong></label>
+            <label>(Exemplo: confere se os dados do destinatário são mesmo da pessoa)</label>
+            <input type="radio" name="info" value="Sim" checked>Sim
+            <input type="radio" name="info" value="Nao" >Não
         </div>
+        <br>
         <input type="submit" class="botao" value="Enviar"/><br><br><br>
     </form>
     </div>

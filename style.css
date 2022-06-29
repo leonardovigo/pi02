@@ -67,6 +67,8 @@ section img{
     margin-bottom: 0.2em;
     color: #4373c5;
     display: block;
+    font-family: 'Calibri', 'Courier New', Courier, monospace;
+    font-size: 18px;
 }
 
 /* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
